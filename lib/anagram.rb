@@ -1,3 +1,4 @@
+
 class Anagram
   attr_accessor :word
 
@@ -6,7 +7,7 @@ class Anagram
   end
 
   def match(anagram_arr)
-    anagram_arr.detect{|anagram| anagram == /#{word}/}
+    anagram_arr.detect{|anagram| anagram.split("") == /#{word}/}
   end
 
 
