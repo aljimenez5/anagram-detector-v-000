@@ -7,7 +7,6 @@ class Anagram
   end
 
   def match(anagram_arr)
-    anagrams =[]
     anagram_arr.collect{|gram| anagrams << gram if gram.split("").sort == word.split("").sort}
   end
 
