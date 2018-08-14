@@ -6,7 +6,7 @@ class Anagram
   end
 
   def match(anagram_arr)
-    anagram_arr.find{|anagram| anagram == /#{word}/}
+    anagram_arr.detect{|anagram| anagram == /#{word}/}
   end
 
 
