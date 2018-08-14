@@ -8,7 +8,7 @@ class Anagram
 
   def match(anagram_arr)
     anagram_arr.collect{|gram| gram if gram.split("").sort == word.split("").sort}
-  end
+  end.compact
 
 
 end
