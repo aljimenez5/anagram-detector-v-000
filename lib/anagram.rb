@@ -6,7 +6,7 @@ class Anagram
   end
 
   def match(anagram_arr)
-    self.find(/[word]/)
+    anagram_arr.find(/[word]/)
 
 
 end
